@@ -1,13 +1,11 @@
-local TotalClicks = 0
+local totalClicks = 0
 
-script.Parent.Activated:Connect (function ()
-	TotalClicks += 1
+script.Parent.Activated:Connect(function()
+	totalClicks += 1
 
-	if TotalClicks == 1 then
+	if totalClicks == 1 then
 		script.Parent.Text = "You've clicked 1 time"
-
 	else
-		script.Parent.Text = "You've clicked " .. TotalClicks .. " times"
-
+		script.Parent.Text = "You've clicked " .. totalClicks .. " times"
 	end
 end)
